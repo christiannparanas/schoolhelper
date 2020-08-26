@@ -1,10 +1,72 @@
 
 .nav {
+   position: relative;
 
    .bar {
 
       i {
-         font-size: 30px;
+         font-size: 28px;
       } 
+   }
+
+   .menu {
+      width: 70%;
+      height: 100vh;
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      z-index: 1;
+      background-color: #fff;
+      padding: 30px 15px;
+      transition: all .3s ease-in-out;
+
+      .navigate {
+         position: relative;
+
+         .info {
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 800;
+            color: #017083;
+         }
+
+         .link {
+            position: absolute;
+            left: -20px;
+            padding: 10px 20px;
+            position: relative;
+            text-decoration: none;
+            display: block;
+            color: #717478;
+
+            &:hover {
+               color: #2b9f95;
+               background-color: #e0f2f2;
+            }
+
+            .text {
+               font-weight: 800;
+               position: absolute;
+               left: 60px;
+               top: 19px;
+            }
+
+            #calnav {
+               top: 16px;
+            }
+
+            #timenav {
+               top: 16px;
+            }
+
+            #subnav {
+               top: 14px;
+            }
+
+            .timetableicon {
+               width: 25px;
+            }
+         }
+      }
    }
 }
